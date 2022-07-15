@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservas</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="gridReservas">
+    <header class="divHeader">
+        <div class="header">
+            <nav class="box">
+                <div class="b-left vCenter">
+                    <ul>
+                        <li class="right">
+                            <a href="reservas.html">Reservas</a>
+                        </li>
+                        <li class="right">
+                            <a href="menu.html"> Menu</a>
+                        </li>
+                        <li class="right">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="b-center">
+                    <a title="LePettit" href="../index.html" class="atest"><img src="../images/logo.png" class="logo center" alt="LePettit"></a>
+                    </div>
+                <div class="b-right vCenter">
+                    <ul>
+                        <li class="left">
+                            <a href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="left">
+                            <a href="contactanos.html">Contactacos</a>
+                        </li>
+                        <li class="left">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="reservasForm jello-horizontal">
+        <form>
+            <h1 class="h1reservas">Reservas</h1>
+            <div>
+                <!-- <label for="nombre_apellido">Nombre y Apellido*:</label> -->
+                <input class="stiloForm" type="text" name="Nombre_Apellido" placeholder="Nombre y Apellido" required/>
+            </div>
+            <br>
+            <div>
+                <!-- <label for="edad">Fecha y hora a reservar*:</label> -->
+                <input class="stiloForm" type="text" name="Fecha y hora" required placeholder="Fecha y Hora"/>
+            </div>
+            <br>
+            <div>
+                <!-- <label for="ubiertos">Cubiertos*:</label> -->
+                <select class="stiloForm" name="Cubiertos" required>
+                    <option value="1 Cubiertos">1 Cubierto</option>
+                    <option value="2 Cubiertos">2 Cubiertos</option>
+                    <option value="3 Cubiertos">3 Cubiertos</option>
+                    <option value="4 Cubiertos">4 Cubiertos</option>
+                    <option value="5 Cubiertos">5 Cubiertos</option>
+                    <option value="Mas Cubiertos">Mas Cubiertos</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <select class="stiloForm" name="niños" required>
+                    <option value="1 niño">1 Niño</option>
+                    <option value="2 niños">2 Niños</option>
+                    <option value="3 niños">3 Niños</option>
+                    <option value="4 niños">4 Niños</option>
+                    <option value="Mas niños">Mas niños</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <select class="stiloForm" name="especial" required>
+                    <option value="2 niños">Especial?</option>
+                    <option value="1 cumpleaños">Cumpleaños</option>
+                    <option value="aniversario">Aniversario</option>
+                    <option value="propocicion">Propocicion</option>
+                    <option value="elebracion">celebracion</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+            <br>
+            <!-- <label for="Pedido">haga su pedido especial!:</label> -->
+            <textarea class="txtArea" type="text" name="Pedido" placeholder="haga su pedido especial!"></textarea>
+            <br>
+            <label for="acepta">Acepto los terminos y condiciones</label>
+            <input type="checkbox" name="Acepta" value="1" required>
+            <br>
+            <div class="divbotones">
+                <input class="botonerForm" type="submit" value="Envian reserva">
+                <input class="botonerForm" type="reset" value="vaciar campos">
+            </div>
+        </form>
+    </section>
+    <footer class="divFooter">
+        <a title="LePettit" href="../index.html" class="atest"><img src="../images/logo.png" class="logo center" alt="LePettit"></a>
+        <a title="LePettit" href="https://www.instagram.com/" class="atest"><img src="../images/insta.png" class="footerIcon" alt="insta"></a>
+        <a title="LePettit" href="https://twitter.com/" class="atest"><img src="../images/twitter.png" class="footerIcon" alt="twitter"></a>
+        <a title="LePettit" href="https://www.facebook.com/" class="atest"><img src="../images/face.png" class="footerIcon" alt="facebook"></a>
+        <a title="LePettit" href="mailto:braianalex2012@gmail.com" class="atest"><img src="../images/mail.png" class="footerIcon" alt="mail"></a>
+    </footer>
+</body>
+</html>
