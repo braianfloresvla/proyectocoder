@@ -138,6 +138,7 @@ nav ul li a:hover{
     width: 50vw;
     height: 430px;
     object-fit: cover;
+    margin-left: 10px;
 }
 .parrafoindex{
     text-align: center;
@@ -159,6 +160,7 @@ nav ul li a:hover{
     display: flex;
     text-align: center;
     background-color: rgb(48, 48, 48);
+    margin-top: 2vh;
 }
 /******************************* index *******************************/
 .menuIndex{
@@ -319,6 +321,7 @@ footer{
     .fotoParrafo{
         width: 80vw;
         height: 105vh;
+        margin: 0 auto;
     }
     .containerParrafo{
         width: 80vw;
