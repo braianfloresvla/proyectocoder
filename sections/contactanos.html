@@ -46,6 +46,7 @@
     </header>
 <section class="containerForm jello-horizontal">
     <form>
+        <h1 class="h1Contactanos">contactanos</h1>
         <div>
             <input class="stiloForm" type="text" name="Nombre_Apellido" required placeholder="Nombre y Apellido"/>
         </div>
@@ -69,7 +70,10 @@
             <textarea class="txtArea" type="text" name="contactanos" placeholder="Ingrese su consulta" required></textarea>
         <div>
         <br>
-        <div>
+        <label for="acepta">Acepto los terminos y condiciones</label>
+        <input type="checkbox" name="Acepta" value="1" required>
+        <br>
+        <div class="divbotones">
             <input class="botonerForm" type="submit" value="Envian info">
             <input class="botonerForm" type="reset" value="Borrar info">
         </div>
