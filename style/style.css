@@ -132,8 +132,14 @@ nav ul li a:hover{
 .containerIniciofoto{
     width: 100%;
 }
+.test{
+    height: 87vh;
+}
 
 /******************************* parrafoInicio *******************************/
+
+/* rgb(48, 48, 48); color */
+
 .fotoParrafo{
     width: 50vw;
     height: 430px;
@@ -157,10 +163,12 @@ nav ul li a:hover{
     color: white;
 }
 .parrafoIndex{
+    width: auto;
+    height: auto;
     display: flex;
     text-align: center;
     background-color: rgb(48, 48, 48);
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 /******************************* index *******************************/
 .menuIndex{
@@ -173,6 +181,7 @@ nav ul li a:hover{
     background-repeat: no-repeat;
     width: 100%;
     height: 20vh;
+    margin-top: 1vh;
 }
 .links{
     text-decoration: none;
@@ -351,7 +360,15 @@ footer{
         height: auto;
     }
 }
-@media screen and (max-width:767px){
+@media (max-width:900px){
+    .parrafoIndex{
+        flex-direction: column;
+    }
+    .fotoParrafo{
+        margin-left: 0;
+    }
+}
+@media (max-width:767px){
     .containerGaleria{
         flex-direction: column;
         align-items: center;
