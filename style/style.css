@@ -20,11 +20,17 @@ body{
     grid-template-columns: repeat(1);
     grid-template-areas: 
     "navGrid"
+    "menusgrid"
+    "gNosotros"
     "formReserva"
     "fotoInicio"
     "pInicio"
     "menuindex"
     "footer";
+}
+/******************************* gridInicio *******************************/
+.gridmenus{
+    grid-area: menusgrid;
 }
 /******************************* gridInicio *******************************/
 .galeriaFotos{
@@ -102,7 +108,6 @@ body{
 .test{
     height: 87vh;
 }
-
 /******************************* parrafoInicio *******************************/
 
 /* rgb(48, 48, 48); color */
@@ -185,9 +190,17 @@ body{
     padding-top: 5em;
 }
 .opcionesMenu{
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.158);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menusTitulos{
+    font-weight: bold !important;
+    text-align: center;
+    color: #bc8d4b;
 }
 .menus{
     text-align: center;
@@ -195,12 +208,64 @@ body{
 hr{
     margin-left: 15%;
     margin-right: 15%;
-    border: rgb(139, 137, 0) 2px solid;
+    border: rgb(223, 219, 10) 2px solid;
 }
 .divMenus{
-    width: 50%;
+    width: 40%;
+    margin-bottom: 5%;
 }
-
+.menusParrafo{
+    font-size: 3rem;
+}
+body > section > div > div > p{
+    font-size: 17px;
+}
+/* Nosotros */
+.gridNosotros{
+    grid-area: gNosotros;
+}
+.fondoFijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/fondofijo1.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30vh;
+}
+.fondoFijo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/chef.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+}
+.txtNosotros{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.pNosotros{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.contenedorN1padre{
+    background-color: #0f0f0f;
+}
+.contenedorN1{
+    margin-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body > section > div:nth-child(2){
+    margin-bottom: 5vh;
+}
 /******************************* Fomulario reserva*******************************/
 .reservasForm{
     display: flex;
@@ -319,7 +384,7 @@ footer{
 .footerIcon{
     margin: 3vh auto;
 }
-
+/************************************* media *************************************/
 @media screen and (max-width:480px){
     .parrafoIndex{
         flex-direction: column;
@@ -352,6 +417,17 @@ footer{
         width: auto;
         height: auto;
     }
+    .containerGaleria{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fondoMenu{
+        background-image: url(../images/menu576.jpg);
+        min-width: none;
+        background-size: cover;
+    }
+    
 }
 @media (max-width:900px){
     .parrafoIndex{
@@ -360,11 +436,25 @@ footer{
     .fotoParrafo{
         margin-left: 0;
     }
+    .fondoMenu{
+        background-image: url(../images/menu900.jpg);
+        min-width: none;
+    }
 }
-@media (max-width:767px){
+@media (max-width:768px){
     .containerGaleria{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .opcionesMenu{
+        flex-direction: column;
+    }
+    .divMenus{
+        width: 100%;
+    }
+    .fondoMenu{
+        background-image: url(../images/menu780.jpg);
+        min-width: none;
     }
 }
