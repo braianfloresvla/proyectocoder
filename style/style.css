@@ -20,11 +20,17 @@ body{
     grid-template-columns: repeat(1);
     grid-template-areas: 
     "navGrid"
+    "menusgrid"
+    "gNosotros"
     "formReserva"
     "fotoInicio"
     "pInicio"
     "menuindex"
     "footer";
+}
+/******************************* gridInicio *******************************/
+.gridmenus{
+    grid-area: menusgrid;
 }
 /******************************* gridInicio *******************************/
 .galeriaFotos{
@@ -214,6 +220,52 @@ hr{
 body > section > div > div > p{
     font-size: 17px;
 }
+/* Nosotros */
+.gridNosotros{
+    grid-area: gNosotros;
+}
+.fondoFijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/fondofijo1.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 30vh;
+}
+.fondoFijo2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/chef.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+}
+.txtNosotros{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.pNosotros{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+.contenedorN1padre{
+    background-color: #0f0f0f;
+}
+.contenedorN1{
+    margin-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body > section > div:nth-child(2){
+    margin-bottom: 5vh;
+}
 /******************************* Fomulario reserva*******************************/
 .reservasForm{
     display: flex;
@@ -332,7 +384,7 @@ footer{
 .footerIcon{
     margin: 3vh auto;
 }
-
+/************************************* media *************************************/
 @media screen and (max-width:480px){
     .parrafoIndex{
         flex-direction: column;
@@ -365,8 +417,18 @@ footer{
         width: auto;
         height: auto;
     }
+    .containerGaleria{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fondoMenu{
+        background-image: url(../images/menu576.jpg);
+        min-width: none;
+        background-size: cover;
+    }
+    
 }
-/************************************* media *************************************/
 @media (max-width:900px){
     .parrafoIndex{
         flex-direction: column;
@@ -395,17 +457,4 @@ footer{
         background-image: url(../images/menu780.jpg);
         min-width: none;
     }
-}
-@media (max-width:576px){
-    .containerGaleria{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .fondoMenu{
-        background-image: url(../images/menu576.jpg);
-        min-width: none;
-        background-size: cover;
-    }
-    
 }
