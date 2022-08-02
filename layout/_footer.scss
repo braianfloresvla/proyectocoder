@@ -1,0 +1,17 @@
+footer{
+    align-items: center;
+    width: 100%;
+    grid-area: footer;
+}
+.divFooter{
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.footerIcon{
+    margin: 3vh auto;
+}
