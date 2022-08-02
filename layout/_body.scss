@@ -1,0 +1,23 @@
+*{
+    margin: 0
+    ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(0, 0, 0);
+    min-width: 300px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(1);
+    grid-template-areas: 
+    "navGrid"
+    "menusgrid"
+    "gNosotros"
+    "formReserva"
+    "fotoInicio"
+    "pInicio"
+    "menuindex"
+    "footer";
+}

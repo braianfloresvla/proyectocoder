@@ -1,0 +1,30 @@
+/******************************* gridInicio *******************************/
+.gridmenus{
+    grid-area: menusgrid;
+}
+/******************************* gridInicio *******************************/
+.galeriaFotos{
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+}
+.navGrid{
+    grid-area: navGrid;
+}
+.inicioGrid{
+    grid-area: fotoInicio;
+}
+.parrafoIniciogrid{
+    grid-area: pInicio;
+}
+.menuIndexg{
+    grid-area: menuindex;
+}
+/******************************* gridReservas*******************************/
+.gridReservas{
+    display: grid;
+    grid-area: formReserva;
+}
+/******************************* gridGalerias*******************************/
+.gridGaleria{
+    display: grid;
+}
