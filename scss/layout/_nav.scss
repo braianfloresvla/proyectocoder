@@ -1,0 +1,25 @@
+.bg-dark{
+    --bs-bg-opacity: 0;
+    background-color: #000000;
+}
+.logo{
+    width: 130px !important;
+    height: 68px !important;
+}
+.divHeader {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle
+}
+.navboostrap{
+    color: $colorFuente;
+}
+.testnav {
+    float: left;
+    margin: 0;
+    left: 56%;
+    transform: translatex(-53%);
+    position: relative;
+    align-items: center;
+}

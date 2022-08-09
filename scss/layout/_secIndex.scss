@@ -1,0 +1,59 @@
+
+/* 1º */
+.carruselBst{
+    height: 87vh;
+}
+/* 2º */
+.fotoParrafo{
+    width: 50vw;
+    height: 430px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.parrafoindex{
+    text-align: center;
+    margin-top: 5%;
+}
+.h1Index{
+    margin-top: 12%;
+    color: white;
+}
+.containerParrafo{
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-left: 5px;
+    right: 2px;
+    color: white;
+}
+.parrafoIndex{
+    width: auto;
+    height: auto;
+    display: flex;
+    text-align: center;
+    background-color: $fondoGris;
+    margin-top: 1vh;
+}
+/* 3º */
+.menuIndex{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-image: url("../images/maderas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20vh;
+    margin-top: 1vh;
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1%;
+    &:hover{
+        color: rgb(172, 172, 172);
+        text-shadow: 1px 1px #000000
+    }
+}
