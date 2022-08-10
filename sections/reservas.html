@@ -46,17 +46,14 @@
         <form>
             <h1 class="h1reservas">Reservas</h1>
             <div>
-                <!-- <label for="nombre_apellido">Nombre y Apellido*:</label> -->
                 <input class="stiloForm" type="text" name="Nombre_Apellido" placeholder="Nombre y Apellido" required/>
             </div>
             <br>
             <div>
-                <!-- <label for="edad">Fecha y hora a reservar*:</label> -->
-                <input class="stiloForm" type="text" name="Fecha y hora" required placeholder="Fecha y Hora"/>
+                <input class="stiloForm" type="datetime-local" name="FechaHora" required/>
             </div>
             <br>
             <div>
-                <!-- <label for="ubiertos">Cubiertos*:</label> -->
                 <select class="stiloForm" name="Cubiertos" required>
                     <option value="1 Cubiertos">1 Cubierto</option>
                     <option value="2 Cubiertos">2 Cubiertos</option>
@@ -88,7 +85,6 @@
                 </select>
             </div>
             <br>
-            <!-- <label for="Pedido">haga su pedido especial!:</label> -->
             <textarea class="txtArea" type="text" name="Pedido" placeholder="haga su pedido especial!"></textarea>
             <br>
             <label for="acepta">Acepto los terminos y condiciones</label>
