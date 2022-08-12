@@ -489,7 +489,10 @@ figure.snip0016:hover figcaption::before {
     width: 80%; }
   .fondoMenu {
     background-image: url(../images/menu900.jpg);
-    min-width: none; } }
+    min-width: none; }
+  .containerParrafo {
+    width: 80%;
+    margin-left: 10%; } }
 
 @media (max-width: 768px) {
   .containerGaleria {
