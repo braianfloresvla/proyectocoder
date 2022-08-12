@@ -13,3 +13,15 @@
 .h1Galeria{
     text-align: center;
 }
+.h2Recetas{
+    @extend .h1Galeria;
+
+}
+.bgGaleria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: rgb(39, 40, 41) 1px solid;
+    width: 100%;
+    height: 150px;
+}
