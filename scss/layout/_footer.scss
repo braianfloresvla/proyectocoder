@@ -1,17 +1,63 @@
 footer{
-    align-items: center;
-    width: 100%;
     grid-area: footer;
 }
-.divFooter{
-
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+.piePagina{
+    width: 100%;
+    background-color: $fondoGris;
 
 }
-.footerIcon{
-    margin: 3vh auto;
+.piePagina .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.piePagina .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piePagina .grupo1 .box figure img{
+    width: 250px;
+}
+.piePagina .grupo1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.piePagina .grupo1 .box p{
+    color: $colorFuente;
+    margin-bottom: 10px;
+}
+.piePagina .grupo1 .redSocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $colorFuente;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+        &:hover{
+            color: black;
+        }
+}
+.piePagina .grupo2{
+    text-align: center;
+    padding: 15px 10px;
+}
+.piePagina .grupo2 small{
+    font-size: 15px;
+}
+.footerReserva{
+    color: white;
+        &:hover{
+            color: black;
+        }
 }

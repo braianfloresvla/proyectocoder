@@ -1,8 +1,7 @@
 /******************************* Fomulario contacto *******************************/
 .containerForm{
-    display: flex;
     justify-content: center;
-    @include formularios
+    @include formularios;
 }
 .h1Contactanos{
     color: $colorFuente;
@@ -32,4 +31,7 @@
 .botonerForm{
     width: 50%;
     height: 40px;
+}
+.flexCont{
+    display: flex;
 }
