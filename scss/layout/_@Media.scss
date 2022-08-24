@@ -1,78 +1,63 @@
-@media screen and (max-width:480px){
-    .parrafoIndex{
-        flex-direction: column;
-    }
-    .fotoParrafo{
+@media screen and (max-width: 480px) {
+    .parrafoIndex {
+        flex-direction: column; }
+    .fotoParrafo {
         width: 80vw;
         height: 105vh;
-        margin: 0 auto;
-    }
-    .containerParrafo{
+        margin: 0 auto; }
+    .containerParrafo {
         width: 80vw;
         justify-content: center;
-        margin: 0 auto;
-    }
-    .h1Index{
-        margin-top: 3%;
-    }
+        margin: 0 auto; }
+    .h1Index {
+        margin-top: 3%; }
     /* reservas */
-    .reservasForm{
-        margin: 15% auto;
-    }
-    .fotoParrafo{
+    .reservasForm {
+        margin: 15% auto; }
+    .fotoParrafo {
         width: auto;
-        height: auto;
-    }
-    .containerParrafo{
+        height: auto; }
+    .containerParrafo {
+        width: auto; }
+    .containerIniciofoto {
         width: auto;
-    }
-    .containerIniciofoto{
-        width: auto;
-        height: auto;
-    }
-    .containerGaleria{
+        height: auto; }
+    .containerGaleria {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-    .fondoMenu{
+        justify-content: center; }
+    .fondoMenu {
         background-image: url(../images/menu576.jpg);
         min-width: none;
-        background-size: cover;
-    }
-    
-}
-@media (max-width:900px){
-    .parrafoIndex{
-        flex-direction: column;
-    }
-    .fotoParrafo{
+        background-size: cover; } }
+
+@media (max-width: 900px) {
+    .parrafoIndex {
+        flex-direction: column; }
+    .fotoParrafo {
         margin-left: 0;
-        width: 80%;
-    }
-    .fondoMenu{
+        width: 80%; }
+    .fondoMenu {
         background-image: url(../images/menu900.jpg);
-        min-width: none;
-    }
-    .containerParrafo{
+        min-width: none; }
+    .containerParrafo {
         width: 80%;
-        margin-left: 10%;
-    }
-}
-@media (max-width:768px){
-    .containerGaleria{
+        margin-left: 10%; }
+    .piePagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px; } }
+
+@media (max-width: 768px) {
+    .containerGaleria {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-    .opcionesMenu{
-        flex-direction: column;
-    }
-    .divMenus{
-        width: 100%;
-    }
-    .fondoMenu{
+        justify-content: center; }
+    .opcionesMenu {
+        flex-direction: column; }
+    .divMenus {
+        width: 100%; }
+    .fondoMenu {
         background-image: url(../images/menu780.jpg);
-        min-width: none;
-    }
-}
+        min-width: none; } }
