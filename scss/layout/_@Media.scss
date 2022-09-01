@@ -1,47 +1,37 @@
-@media screen and (max-width:480px){
-    .parrafoIndex{
-        flex-direction: column;
-    }
-    .fotoParrafo{
+@media screen and (max-width: 480px) {
+    .parrafoIndex {
+        flex-direction: column; }
+    .fotoParrafo {
         width: 80vw;
         height: 105vh;
-        margin: 0 auto;
-    }
-    .containerParrafo{
+        margin: 0 auto; }
+    .containerParrafo {
         width: 80vw;
         justify-content: center;
-        margin: 0 auto;
-    }
-    .h1Index{
-        margin-top: 3%;
-    }
+        margin: 0 auto; }
+    .h1Index {
+        margin-top: 3%; }
     /* reservas */
-    .reservasForm{
-        margin: 15% auto;
-    }
-    .fotoParrafo{
+    .reservasForm {
+        margin: 15% auto; }
+    .fotoParrafo {
         width: auto;
-        height: auto;
-    }
-    .containerParrafo{
+        height: auto; }
+    .containerParrafo {
+        width: auto; }
+    .containerIniciofoto {
         width: auto;
-    }
-    .containerIniciofoto{
-        width: auto;
-        height: auto;
-    }
-    .containerGaleria{
+        height: auto; }
+    .containerGaleria {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-    .fondoMenu{
+        justify-content: center; }
+    .fondoMenu {
         background-image: url(../images/menu576.jpg);
         min-width: none;
-        background-size: cover;
-    }
-    
+        background-size: cover; } 
 }
+
 @media (max-width:900px){
     .parrafoIndex{
         flex-direction: column;
@@ -65,20 +55,80 @@
         padding: 35px 0px;
     }
 }
-@media (max-width:768px){
-    .containerGaleria{
+@media (max-width: 768px) {
+    .containerGaleria {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center; }
+    .opcionesMenu {
+        flex-direction: column; }
+    .divMenus {
+        width: 100%; }
+    .fondoMenu {
+        background-image: url(../images/menu780.jpg);
+        min-width: none; } 
+}
+@media (max-width: 850px) {
+    .contenedoresContactanos{
+        flex-direction: column;
+        align-items: center;
     }
-    .opcionesMenu{
+    .hijoContactanos1{
+        width: 90%;
+        height: 640px;
+        margin-bottom: 10px;
+    }
+    .hijoReserva1{
+        width: 90%;
+        height: 765px;
+        margin-bottom: 10px;
+    }
+    .infoFormulario{
+        background-color: $fondoGris;
+        width: 90%;
+        border-left: 1px solid white;
+    }
+    .contenedorCampos{
         flex-direction: column;
     }
-    .divMenus{
-        width: 100%;
+    form{
+        div{
+            div{
+                textarea{
+                    height: 200px;
+                }
+                div{
+                    input{
+                        width: 100%;
+                        height: 50px;
+                        border: none;
+                        border-bottom: 1px solid rgb(139, 139, 139);
+                        outline: none;
+                        padding-bottom: 5px;
+                    }
+                    select{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
-    .fondoMenu{
-        background-image: url(../images/menu780.jpg);
-        min-width: none;
-    }
+}
+@media (max-width: 900px) {
+    .parrafoIndex {
+        flex-direction: column; }
+    .fotoParrafo {
+        margin-left: 0;
+        width: 80%; }
+    .fondoMenu {
+        background-image: url(../images/menu900.jpg);
+        min-width: none; }
+    .containerParrafo {
+        width: 80%;
+        margin-left: 10%; }
+    .piePagina .grupo1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px; }
 }

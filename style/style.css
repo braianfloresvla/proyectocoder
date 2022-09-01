@@ -674,3 +674,51 @@ figure.snip0016:hover figcaption::before {
   .fondoMenu {
     background-image: url(../images/menu780.jpg);
     min-width: none; } }
+
+@media (max-width: 850px) {
+  .contenedoresContactanos {
+    flex-direction: column;
+    align-items: center; }
+  .hijoContactanos1 {
+    width: 90%;
+    height: 640px;
+    margin-bottom: 10px; }
+  .hijoReserva1 {
+    width: 90%;
+    height: 765px;
+    margin-bottom: 10px; }
+  .infoFormulario {
+    background-color: #303030;
+    width: 90%;
+    border-left: 1px solid white; }
+  .contenedorCampos {
+    flex-direction: column; }
+  form div div textarea {
+    height: 200px; }
+  form div div div input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #8b8b8b;
+    outline: none;
+    padding-bottom: 5px; }
+  form div div div select {
+    width: 100%; } }
+
+@media (max-width: 900px) {
+  .parrafoIndex {
+    flex-direction: column; }
+  .fotoParrafo {
+    margin-left: 0;
+    width: 80%; }
+  .fondoMenu {
+    background-image: url(../images/menu900.jpg);
+    min-width: none; }
+  .containerParrafo {
+    width: 80%;
+    margin-left: 10%; }
+  .piePagina .grupo1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
