@@ -359,6 +359,17 @@ div.infoFormulario h1 {
   width: 90%;
   margin-left: 5%; }
 
+/* reservas */
+.hijoReserva1 {
+  background-color: #303030;
+  width: 55vw;
+  height: 545px; }
+
+.h1Formularios {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center; }
+
 .fondoMenu {
   background-image: url(../images/menu.jpg);
   background-repeat: no-repeat;
@@ -651,6 +662,10 @@ figure.snip0016:hover figcaption::before {
   .hijoContactanos1 {
     width: 90%;
     height: 640px;
+    margin-bottom: 10px; }
+  .hijoReserva1 {
+    width: 90%;
+    height: 765px;
     margin-bottom: 10px; }
   .infoFormulario {
     background-color: #303030;
