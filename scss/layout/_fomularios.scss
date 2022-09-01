@@ -30,8 +30,15 @@
     justify-content: center;
 }
 .botonerForm{
-    width: 50%;
-    height: 40px;
+    width: 45%;
+    height: 50px;
+    margin-left: 10px;
+    background-color: $fondoGris;
+    color: white;
+    transition: background-color .5s;
+        &:hover{
+            background-color: rgba(139, 138, 138, 0.39);
+            }
 }
 
 
@@ -45,10 +52,7 @@
 .hijoContactanos1{
     background-color: $fondoGris;
     width: 55vw;
-    height: 400px;
-}
-.hijoContactanos2{
-
+    height: 500px;
 }
 .contenedorCampos{
     display: flex;
@@ -59,8 +63,6 @@
     margin-right: 20px;
 }
 .seccionformulario{
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 form{
     div{
@@ -97,13 +99,15 @@ form{
     margin-right: 20px;
 }
 .infoFormulario{
-    background-color: white;
-    color: black;
+    background-color: $fondoGris;
     width: 35vw;
+    border-left: 1px solid white;
 }
 .tablaFormulario{
     font-weight: 600px;
-    margin-bottom: 30px;
+    margin-bottom: 9px;
+    margin-left: 1vw;
+    border-bottom: 1px solid white;
 }
 tr td:first-child{
     padding-right: 20px;
@@ -117,10 +121,35 @@ div.infoFormulario{
         font-size: 2rem;
         text-align: center;
     }
-    iframe{
-        width: 480px;
-        height: 150px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
+}
+.check{
+    margin-left: 3vw;
+}
+.camposSub{
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    outline: none;
+    padding-bottom: 5px;
+}
+.botonSub{
+    @extend .botonerForm;
+    margin-top: 5px;
+        &:hover{
+            background-color: rgba(139, 138, 138, 0.39);
+        }
+}
+.contenedorSub{
+    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalContactanos{
+    background-color: $fondoGris;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
 }
