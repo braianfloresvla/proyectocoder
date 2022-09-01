@@ -78,7 +78,9 @@ body {
   align-items: center; }
 
 footer {
-  grid-area: footer;
+  grid-area: footer; }
+
+.footerMargin {
   margin-top: 30px; }
 
 .piePagina {
