@@ -80,6 +80,9 @@ body {
 footer {
   grid-area: footer; }
 
+.footerMargin {
+  margin-top: 30px; }
+
 .piePagina {
   width: 100%;
   background-color: #303030; }
@@ -122,8 +125,9 @@ footer {
   margin-right: 10px;
   text-align: center;
   transition: all 300ms ease; }
-  .piePagina .grupo1 .redSocial a:hover {
-    color: black; }
+
+.piePagina .grupo1 .redSocial a:hover {
+  color: black; }
 
 .piePagina .grupo2 {
   text-align: center;
@@ -134,8 +138,9 @@ footer {
 
 .footerReserva {
   color: white; }
-  .footerReserva:hover {
-    color: black; }
+
+.footerReserva:hover {
+  color: black; }
 
 /* 1º */
 .carruselBst {
@@ -219,6 +224,7 @@ footer {
 
 /******************************* Fomulario contacto *******************************/
 .containerForm, .reservasForm {
+  display: flex;
   justify-content: center;
   background-color: #303030;
   padding: 0 auto;
@@ -249,12 +255,122 @@ footer {
   display: flex;
   justify-content: center; }
 
-.botonerForm {
-  width: 50%;
-  height: 40px; }
+.botonerForm, .botonSub {
+  width: 45%;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #303030;
+  color: white;
+  transition: background-color .5s; }
+  .botonerForm:hover, .botonSub:hover {
+    background-color: rgba(139, 138, 138, 0.39); }
 
-.flexCont {
-  display: flex; }
+/* asssssssssssdddddddddd */
+.contenedoresContactanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.hijoContactanos1 {
+  background-color: #303030;
+  width: 55vw;
+  height: 500px; }
+
+.contenedorCampos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+form div div textarea {
+  height: 200px; }
+
+form div div div {
+  display: flex;
+  flex-direction: column; }
+  form div div div input {
+    width: 25vw;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #8b8b8b;
+    outline: none;
+    padding-bottom: 5px; }
+  form div div div select {
+    width: 25vw;
+    height: 50px;
+    padding-bottom: 5px;
+    border: none;
+    outline: none; }
+
+.campoTexto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.infoFormulario {
+  background-color: #303030;
+  width: 35vw;
+  border-left: 1px solid white; }
+
+.tablaFormulario {
+  font-weight: 600px;
+  margin-bottom: 9px;
+  margin-left: 1vw;
+  border-bottom: 1px solid white; }
+
+tr td:first-child {
+  padding-right: 20px; }
+
+tr td {
+  padding-top: 20px; }
+
+div.infoFormulario h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center; }
+
+.check {
+  margin-left: 3vw; }
+
+.camposSub {
+  width: 95%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #8b8b8b;
+  outline: none;
+  padding-bottom: 5px; }
+
+.botonSub {
+  margin-top: 5px; }
+  .botonSub:hover {
+    background-color: rgba(139, 138, 138, 0.39); }
+
+.contenedorSub {
+  text-align: center;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.principalContactanos {
+  background-color: #303030;
+  text-align: center;
+  width: 90%;
+  margin-left: 5%; }
+
+/* reservas */
+.hijoReserva1 {
+  background-color: #303030;
+  width: 55vw;
+  height: 545px; }
+
+.h1Formularios {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center; }
 
 .fondoMenu {
   background-image: url(../images/menu.jpg);

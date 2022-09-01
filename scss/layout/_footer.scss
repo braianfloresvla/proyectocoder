@@ -1,63 +1,62 @@
-footer{
+footer {
     grid-area: footer;
 }
-.piePagina{
-    width: 100%;
-    background-color: $fondoGris;
-
+.footerMargin{
+    margin-top: 30px;
 }
-.piePagina .grupo1{
+.piePagina {
+    width: 100%;
+    background-color: #303030; }
+
+.piePagina .grupo1 {
     width: 100%;
     max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
-}
-.piePagina .grupo1 .box figure{
+    padding: 45px 0px; }
+
+.piePagina .grupo1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.piePagina .grupo1 .box figure img{
-    width: 250px;
-}
-.piePagina .grupo1 .box h2{
+    align-items: center; }
+
+.piePagina .grupo1 .box figure img {
+    width: 250px; }
+
+.piePagina .grupo1 .box h2 {
     color: white;
     margin-bottom: 25px;
-    font-size: 20px;
-}
-.piePagina .grupo1 .box p{
-    color: $colorFuente;
-    margin-bottom: 10px;
-}
-.piePagina .grupo1 .redSocial a{
+    font-size: 20px; }
+
+.piePagina .grupo1 .box p {
+    color: white;
+    margin-bottom: 10px; }
+
+.piePagina .grupo1 .redSocial a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: $colorFuente;
+    color: white;
     margin-right: 10px;
     text-align: center;
-    transition: all 300ms ease;
-        &:hover{
-            color: black;
-        }
-}
-.piePagina .grupo2{
+    transition: all 300ms ease; }
+    .piePagina .grupo1 .redSocial a:hover {
+    color: black; }
+
+.piePagina .grupo2 {
     text-align: center;
-    padding: 15px 10px;
-}
-.piePagina .grupo2 small{
-    font-size: 15px;
-}
-.footerReserva{
-    color: white;
-        &:hover{
-            color: black;
-        }
-}
+    padding: 15px 10px; }
+
+.piePagina .grupo2 small {
+    font-size: 15px; }
+
+.footerReserva {
+    color: white; }
+    .footerReserva:hover {
+    color: black; }

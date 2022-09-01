@@ -1,7 +1,8 @@
 /******************************* Fomulario contacto *******************************/
 .containerForm{
+    display: flex;
     justify-content: center;
-    @include formularios;
+    @include formularios
 }
 .h1Contactanos{
     color: $colorFuente;
@@ -29,9 +30,139 @@
     justify-content: center;
 }
 .botonerForm{
-    width: 50%;
-    height: 40px;
+    width: 45%;
+    height: 50px;
+    margin-left: 10px;
+    background-color: $fondoGris;
+    color: white;
+    transition: background-color .5s;
+        &:hover{
+            background-color: rgba(139, 138, 138, 0.39);
+            }
 }
-.flexCont{
+
+
+/* asssssssssssdddddddddd */
+
+.contenedoresContactanos{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.hijoContactanos1{
+    background-color: $fondoGris;
+    width: 55vw;
+    height: 500px;
+}
+.contenedorCampos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.seccionformulario{
+}
+form{
+    div{
+        div{
+            textarea{
+                height: 200px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                input{
+                    width: 25vw;
+                    height: 50px;
+                    border: none;
+                    border-bottom: 1px solid rgb(139, 139, 139);
+                    outline: none;
+                    padding-bottom: 5px;
+                }
+                select{
+                    width: 25vw;
+                    height: 50px;
+                    padding-bottom: 5px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+.campoTexto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.infoFormulario{
+    background-color: $fondoGris;
+    width: 35vw;
+    border-left: 1px solid white;
+}
+.tablaFormulario{
+    font-weight: 600px;
+    margin-bottom: 9px;
+    margin-left: 1vw;
+    border-bottom: 1px solid white;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 20px;
+}
+div.infoFormulario{
+    h1{
+        font-weight:bold;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+.check{
+    margin-left: 3vw;
+}
+.camposSub{
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(139, 139, 139);
+    outline: none;
+    padding-bottom: 5px;
+}
+.botonSub{
+    @extend .botonerForm;
+    margin-top: 5px;
+        &:hover{
+            background-color: rgba(139, 138, 138, 0.39);
+        }
+}
+.contenedorSub{
+    text-align: center;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principalContactanos{
+    background-color: $fondoGris;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* reservas */
+.hijoReserva1{
+    background-color: $fondoGris;
+    width: 55vw;
+    height: 545px;
+}
+
+.h1Formularios{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
 }
